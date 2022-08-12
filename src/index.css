@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply w-full px-10 py-10 mx-auto max-w-7xl;
+}
+
+@font-face {
+  font-family: "Roboto Slab", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+}
+
+body {
+  @apply font-primary;
+  @apply bg-white;
+}
+
+.ql-toolbar.ql-snow {
+  @apply flex items-center justify-center border rounded-tl-md rounded-tr-md border-gray-50;
+}
+.ql-container.ql-snow {
+  @apply h-[600px] pt-10 text-[20px] text-gray-500;
+}
+.content > * {
+  @apply mt-2;
+}
+.content > p {
+  @apply text-gray-500;
+}
+.content > img {
+  @apply border-2 border-gray-800 rounded-md;
+}
+.content > pre {
+  @apply px-3 py-3 text-xs text-white rounded-sm bg-slate-500;
+}
+
+.content > ul li {
+  @apply ml-4 text-xs text-gray-500 list-disc;
+}
